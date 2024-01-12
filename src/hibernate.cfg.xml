@@ -1,0 +1,32 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- Configuración de la base de datos -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/RNG</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123123</property>
+
+        <!-- Configuración de dialecto -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Configuración de la visualización de SQL generado (opcional) -->
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+
+        <!-- Mapeo de clases de entidad -->
+        <mapping class="RNG.modelo.Articulo"/>
+        <mapping class="RNG.modelo.Cliente"/>
+        <mapping class="RNG.modelo.Pedido"/>
+        <mapping class="RNG.modelo.ArticuloDAO"/>
+        <mapping class="RNG.modelo.ClienteDAO"/>
+        <mapping class="RNG.modelo.PedidoDAO"/>
+        <mapping class="RNG.modelo.ArticuloDAOHibernate"/>
+        <mapping class="RNG.modelo.ClienteDAOHibernate"/>
+        <mapping class="RNG.modelo.PedidoDAOHibernate"/>
+
+
+    </session-factory>
+</hibernate-configuration>

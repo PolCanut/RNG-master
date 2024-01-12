@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RNG.vista.GestionOSController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Text layoutX="251.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuevo Pedido">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="87.0" fitWidth="69.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@iconos/dados.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="83.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico:" />
+                <Text layoutX="83.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Articulo:" />
+                <Text layoutX="83.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad de unidades:" />
+                <TextField fx:id="CajaCorreoPedido" promptText="Ingrese el correo electrónico del cliente" layoutX="209.0" layoutY="141.0" prefHeight="25.0" prefWidth="323.0" />
+                <TextField fx:id="CajaCodigoPedido" promptText="Ingrese el código del articulo que desees" layoutX="209.0" layoutY="175.0" prefHeight="25.0" prefWidth="323.0" />
+                <TextField fx:id="CajaUnidad" promptText="Ingrese las unidades que desees" layoutX="209.0" layoutY="211.0" prefHeight="25.0" prefWidth="323.0" />
+                <Button layoutX="276.0" layoutY="308.0" mnemonicParsing="false" text="Hacer pedido" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
